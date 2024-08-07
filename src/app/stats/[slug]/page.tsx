@@ -14,7 +14,7 @@ interface pageProps {
   userName: string;
 }
 
-const Page: FC<pageProps> = ({}) => {
+const Page = ({}) => {
   const [profileInfo, setProfileInfo] = useState<any>(null);
   const [skyblockLevel, setSkyblockLevel] = useState<any>(null);
   const [skin, setSkin] = useState<any>(null);
