@@ -108,9 +108,9 @@ const TrophyFish: FC<TrophyFishProps> = ({ trophyfishes }: TrophyFishProps) => {
             )}
           </ul>
           <div>
-            <h3 className="font-bold">Why isn't * fish showing as maxed?</h3>
+            <h3 className="font-bold">Why isn&apos;t * fish showing as maxed?</h3>
             <p>
-              Trophy fishes don't grant progress if you haven't fished a tier
+              Trophy fishes don&apos;t grant progress if you haven&apos;t fished a tier
               below the highest one caught.
             </p>
           </div>

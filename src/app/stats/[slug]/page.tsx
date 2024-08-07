@@ -5,7 +5,6 @@ import Dungeons from "@/app/components/Dungeons";
 import MemberList from "@/app/components/MemberList";
 import Mining from "@/app/components/Mining";
 import Skills from "@/app/components/Skills";
-import SkinViewer from "@/app/components/SkinViewer";
 import Slayer from "@/app/components/Slayer";
 import TrophyFish from "@/app/components/TrophyFish";
 import { Progress } from "@/components/ui/progress";
@@ -15,7 +14,7 @@ interface pageProps {
   userName: string;
 }
 
-const page: FC<pageProps> = ({}) => {
+const Page: FC<pageProps> = ({}) => {
   const [profileInfo, setProfileInfo] = useState<any>(null);
   const [skyblockLevel, setSkyblockLevel] = useState<any>(null);
   const [skin, setSkin] = useState<any>(null);
@@ -131,4 +130,4 @@ const page: FC<pageProps> = ({}) => {
   );
 };
 
-export default page;
+export default Page;
