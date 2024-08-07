@@ -140,7 +140,7 @@ const Mining: FC<MiningProps> = ({ mining }) => {
       <section className="bg-gray-600/40 p-2 rounded-md">
         <article>
           {/* <h3 className="text-lg font-bold">Powder</h3> */}
-          <div className="grid grid-cols-3">
+          <div className="flex flex-wrap">
             {mining &&
               Object.keys(mining.core.powder).map((powderKey, index) => {
                 const powder = mining.core.powder[powderKey];
@@ -190,8 +190,8 @@ const Mining: FC<MiningProps> = ({ mining }) => {
         </article>
 
         {/* hotm level + tree */}
-        <article className="py-2 grid grid-cols-12 gap-x-2">
-          <div className="col-span-4">
+        <article className="py-2 grid md:grid-cols-12 gap-x-2">
+          <div className="md:col-span-4">
             {/* level display */}
             <h3 className="text-lg font-bold">Heart of the Mountain</h3>
             <p>Tier {hotm && hotm.level}</p>
@@ -309,7 +309,7 @@ const Mining: FC<MiningProps> = ({ mining }) => {
               </span>
             </article>
           </div>
-          <div className="col-span-8 bg-gray-900/40 p-2 rounded-md min-h-80">
+          <div className="md:col-span-8 bg-gray-900/40 p-2 rounded-md min-h-80">
             <h1 className="font-bold pb-1">
               {/* check if a mining method is select and show according title */}
               {gold === false && gemstone === false && mineshaft === false ? (
@@ -354,7 +354,7 @@ const Mining: FC<MiningProps> = ({ mining }) => {
                 </div>
               ) : null}
             </h1>
-            <div className="grid grid-cols-2 gap-1 max-h-72 overflow-y-auto">
+            <div className="grid sm:grid-cols-2 gap-1 max-h-72 overflow-y-auto">
               <section className="m-1">
                 <h2>HOTM Abilities</h2>
                 <ChecklistDivider text="To reach minimum requirements" />

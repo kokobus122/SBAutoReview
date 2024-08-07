@@ -102,8 +102,8 @@ const Dungeons: FC<DungeonsProps> = ({ dungeons }) => {
     <div>
       <Title text="Dungeons" max={checkForMax} />
       <section className="bg-gray-600/40 p-2 rounded-md">
-        <div className="flex gap-4">
-          <div className="w-96">
+        <div className="flex flex-col sm:flex-row gap-4">
+          <div className="w-96 mx-auto">
             <div className="flex gap-2 items-center py-1">
               <div
                 className={cn(
@@ -170,7 +170,7 @@ const Dungeons: FC<DungeonsProps> = ({ dungeons }) => {
         </div>
 
         {/* normal cata */}
-        <div className="grid grid-cols-4 gap-4 pt-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
           {dungeons &&
             Object.keys(dungeons?.catacombs?.floors).map((floorKey) => {
               const floor = dungeons.catacombs.floors[floorKey];
@@ -215,7 +215,7 @@ const Dungeons: FC<DungeonsProps> = ({ dungeons }) => {
         </div>
 
         {/* master mode */}
-        <div className="grid grid-cols-4 gap-4 pt-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
           {dungeons &&
             Object.keys(dungeons?.master_catacombs?.floors).map((floorKey) => {
               const floor = dungeons.master_catacombs.floors[floorKey];

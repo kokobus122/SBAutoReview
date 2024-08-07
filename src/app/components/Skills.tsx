@@ -68,7 +68,7 @@ const Skills: FC<SkillsProps> = ({ skill, skin }: SkillsProps) => {
   return (
     <section>
       <Title text="Skills" max={max} />
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-gray-600/40 p-2 rounded-md">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 bg-gray-600/40 p-2 rounded-md">
         {skill &&
           skill.map((skill, index) => (
             <div key={index}>

@@ -40,10 +40,8 @@ const TrophyImage: FC<TrophyImage> = ({ texture, name }) => {
     <Image
       alt={name}
       src={imageUrl}
-      width={0}
-      height={0}
-      sizes="100vw"
-      style={{ width: "100%", height: "auto" }}
+      width={48}
+      height={48}
     />
   );
 };
@@ -72,7 +70,7 @@ const TrophyFish: FC<TrophyFishProps> = ({ trophyfishes }: TrophyFishProps) => {
     <section>
       <Title text="Trophy Fish" max={diaValue} />
       <div className="bg-gray-600/40 p-2 rounded-md">
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <ul>
             {trophyfishes && bronzeCount < trophyfishes.length ? (
               <li>
@@ -115,7 +113,7 @@ const TrophyFish: FC<TrophyFishProps> = ({ trophyfishes }: TrophyFishProps) => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
           {trophyfishes &&
             trophyfishes.map((trophyfish, index) => (
               <div
