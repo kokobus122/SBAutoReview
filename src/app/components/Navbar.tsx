@@ -19,6 +19,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <nav className="bg-gray-800/70 flex justify-between items-center h-12 px-4">
       <Link href="/" className="text-white">Home</Link>
+      
       {pathname === "/" ? null : (
         <form onSubmit={handleSubmit(onSubmit)}>
           <Input
@@ -29,7 +30,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           />
         </form>
       )}
-      <Settings2 className="invisible" />
+      <Link href="/about" className="text-white">About</Link>
     </nav>
   );
 };
