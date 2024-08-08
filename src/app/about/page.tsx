@@ -43,6 +43,12 @@ const page: FC<pageProps> = ({}) => {
             https://minecraft-heads.com/
           </Link>
         </li>
+        <li>
+          2D Skin Api:{" "}
+          <Link href="https://crafatar.com/" className="text-primary">
+            https://crafatar.com/
+          </Link>
+        </li>
         <li>For further inquiries, you can reach me on discord at @kokobus.</li>
       </ul>
     </section>
